@@ -1,0 +1,21 @@
+{
+  "canisters": {
+    "www": {
+      "type": "assets",
+      "source": [
+        "build"
+      ],
+      "frontend": {
+        "entrypoint": "build/index.html"
+      },
+      "dependencies": [
+        "rust_backend"
+      ]
+    },
+    "rust_backend": {
+      "candid": "src/rust_backend/rust_backend.did",
+      "package": "rust_backend",
+      "type": "rust"
+    }
+  }
+}
